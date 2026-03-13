@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THIC — Thailand High School Investment Competition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="thic.css">
+    
+</head>
+<body>
+
+
+
+<!-- ─── NAV ─── -->
+<nav id="navbar">
+
+  <a href="#about" class="nav-logo">
+    <img src="image-removebg-preview.png" alt="THIC" height="40">
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#timeline" onclick="closeMenu()">Timeline</a></li>
+    <li><a href="#awards" onclick="closeMenu()">Awards</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Register</a></li>
+    <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+
+</nav>
+
+<!-- ─── HERO / ABOUT ─── -->
+<section id="about">
+  <div class="hero-eyebrow">Hosted by ICS Investment Club</div>
+
+  <h1 class="hero-headline">
+    Thailand<br><em>high school</em><br>Investment Competition
+  </h1>
+
+  <p class="hero-sub">
+    Student-Led. Institutionally Grounded. Nationally Scalable.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#contact" class="btn-gold"><span>Register Now</span></a>
+    <a href="#timeline" class="btn-ghost">
+      View Timeline
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="hero-stats" id="heroStats">
+  <div class="stat-item">
+    <div class="stat-number">
+      <span class="count-up" data-target="100">0</span><span class="suffix">+</span>
+    </div>
+    <div class="stat-label">Participants</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">
+      <span class="count-up" data-target="2">0</span>
+    </div>
+    <div class="stat-label">Countries</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">
+      <span style="font-size:1em; color:var(--white); font-family:'Cormorant Garamond',serif; font-weight:300;">฿</span><span class="count-up" data-target="120">0</span><span class="suffix">K</span>
+    </div>
+    <div class="stat-label">Prize Pool</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">
+      <span class="count-up" data-target="3">0</span>
+    </div>
+    <div class="stat-label">schools</div>
+  </div>
+</div>
+
+
+  <div class="partners">
+    <div class="partners-label">Official Partners & Sponsors</div>
+    <div class="partners-row">
+      <div class="partner-logo">ICS</div>
+      <div class="partner-logo">kbank</div>
+      <div class="partner-logo">Sk</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── US / ABOUT ─── -->
+
+<section id="about-us">
+  <div class="about-us-grid">
+
+    <div class="about-us-left reveal">
+      <div class="section-eyebrow">About Us</div>
+      <h2 class="section-title">Built by Students,<br>for <em style="font-style:italic; color:var(--gold);">Students</em></h2>
+      <p>
+        THIC is organized by the ICS Investment Club — a student-led organization dedicated to bridging the gap between classroom theory and real-world finance. We believe every ambitious student deserves a platform to prove themselves.
+      </p>
+      <p>
+        Since our first edition, we have grown into Thailand's most competitive high school investment competition, attracting participants from leading international and bilingual schools across the country.
+      </p>
+      <a href="#contact" class="btn-gold"><span>Join This Year</span></a>
+    </div>
+
+    <div class="why-us-right reveal">
+      <div class="section-eyebrow">Why THIC</div>
+      <div class="why-us-list">
+
+        <div class="why-item">
+          <div class="why-number">01</div>
+          <div class="why-content">
+            <div class="why-title">Real-World Experience</div>
+            <div class="why-desc">Work with live market data, build actual portfolios, and pitch to industry professionals — not just teachers.</div>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">02</div>
+          <div class="why-content">
+            <div class="why-title">Industry Judges & Mentors</div>
+            <div class="why-desc">Get evaluated by professionals from leading asset managers, banks, and venture capital firms in Thailand.</div>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">03</div>
+          <div class="why-content">
+            <div class="why-title">Career Launchpad</div>
+            <div class="why-desc">Winners gain internship referrals, mentorship access, and a recognized credential for university applications.</div>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">04</div>
+          <div class="why-content">
+            <div class="why-title">Open to All Levels</div>
+            <div class="why-desc">No prior finance knowledge needed. We provide a full preparation pack so every team starts on equal footing.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── TIMELINE ─── -->
+<section id="timeline">
+  <div class="section-eyebrow">Competition Structure</div>
+  <h2 class="section-title reveal">The Road to<br>the Finals</h2>
+
+  <div class="timeline-grid">
+    <!-- PRELIMINARY -->
+    <div class="timeline-phase reveal">
+      <div class="phase-label">Phase I — Preliminary Round</div>
+      <div class="phase-nodes">
+
+        <div class="timeline-node">
+          <div class="node-dot"></div>
+          <div class="node-content">
+            <div class="node-date">TBD – TBD, 2026</div>
+            <div class="node-title">Registration</div>
+            <div class="node-desc">Participating teams register for the competition and receive key information regarding competition structure, timeline, and participation requirements.
+</div>
+          </div>
+        </div>
+
+        <div class="timeline-node">
+          <div class="node-dot"></div>
+          <div class="node-content">
+            <div class="node-date">TBD, 2026</div>
+            <div class="node-title">Workshops</div>
+            <div class="node-desc">Partner institutions will host workshops, open to all participants, that will teach fundamentals skills required for the Investment Challenge.
+</div>
+          </div>
+        </div>
+
+        <div class="timeline-node">
+          <div class="node-dot"></div>
+          <div class="node-content">
+            <div class="node-date">TBD, 2026</div>
+            <div class="node-title">Featured Company Announcement</div>
+            <div class="node-desc">The featured company for the competition is announced along with preliminary data, allowing participants to begin developing their initial investment thesis.
+</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- FINAL -->
+    <div class="timeline-phase reveal">
+      <div class="phase-label">Phase II — Final</div>
+      <div class="phase-nodes">
+
+        <div class="timeline-node">
+          <div class="node-dot"></div>
+          <div class="node-content">
+            <div class="node-date">TBD, 2026</div>
+            <div class="node-title">Preliminary Submission</div>
+            <div class="node-desc">Teams will submit their initial stock pitch to be screened by industry partners. </div>
+          </div>
+        </div>
+
+        <div class="timeline-node">
+          <div class="node-dot"></div>
+          <div class="node-content">
+            <div class="node-date">TBD, 2026</div>
+            <div class="node-title">Finalists Announced</div>
+            <div class="node-desc">Judges deliberate on Preliminary performance and confirm the 20 finalist teams.</div></div>
+          </div>
+        </div>
+
+        <div class="timeline-node">
+          <div class="node-dot"></div>
+          <div class="node-content">
+            <div class="node-date">TBD 2026</div>
+            <div class="node-title">Tour Case Company & Data Provider</div>
+            <div class="node-desc">Finalists visit the featured company and attend workshops with our data provider to deepen their understanding of the business and refine their final investment pitch.</div>
+          </div>
+        </div>
+
+        <div class="timeline-node">
+          <div class="node-dot"></div>
+          <div class="node-content">
+            <div class="node-date">TBD, 2026</div>
+            <div class="node-title">Final Competition Day</div>
+            <div class="node-desc">Finalist teams present their investment thesis to a panel of industry judges, followed by a curveball market event requiring rapid reassessment of their recommendation.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── AWARDS ─── -->
+<section id="awards">
+  <div class="section-eyebrow">Prizes & Recognition</div>
+
+  <div class="awards-layout">
+    <div class="awards-text reveal">
+      <h2 class="section-title">Compete for<br><em style="font-style:italic;color:var(--gold);">Recognition</em><br>& Rewards</h2>
+      <p>THIC offers more than trophies. Winners gain access to internship pipelines, mentorship from leading investment professionals, and a community of Thailand's next generation of finance leaders.</p>
+      <p>Every finalist receives a detailed scorecard, a letter of distinction signed by the ICS Investment Club Board, and recognition across our partner networks.</p>
+      <div class="prize-pool-label">Total Prize Pool</div>
+      <div class="prize-amount">฿120,000</div>
+    </div>
+
+    <div class="awards-podium reveal">
+      <div class="award-card">
+        <div class="award-rank">1</div>
+        <div class="award-info">
+          <div class="award-place">Champion</div>
+          <div class="award-prize">฿60,000</div>
+          <div class="award-perks">+ Internship placement referral + Trophy + Certificate</div>
+        </div>
+      </div>
+
+      <div class="award-card silver">
+        <div class="award-rank">2</div>
+        <div class="award-info">
+          <div class="award-place">Runner-Up</div>
+          <div class="award-prize">฿35,000</div>
+          <div class="award-perks">+ Mentorship session + Certificate of Excellence</div>
+        </div>
+      </div>
+
+      <div class="award-card bronze">
+        <div class="award-rank">3</div>
+        <div class="award-info">
+          <div class="award-place">Third Place</div>
+          <div class="award-prize">฿15,000</div>
+          <div class="award-perks">+ Certificate of Excellence</div>
+        </div>
+      </div>
+
+      <div class="award-card" style="--gold: #8ab4c8;">
+        <div class="award-rank" style="color: #7fafc5; font-size:1.4rem; padding-top:4px;">✦</div>
+        <div class="award-info">
+          <div class="award-place">Best Research Paper</div>
+          <div class="award-prize">฿10,000</div>
+          <div class="award-perks">+ Publication in ICS Investment Review</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT / REGISTER ─── -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-eyebrow">Contacts</div>
+    <h2 class="contact-title reveal">Fill in your  <em>inquiry</em></h2>
+    <p class="contact-sub reveal">Fill in your details below. Alongside any other inquirys and concerns you may have. Our team will get back to you as soon as possible.</p>
+
+    <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Kinta" required>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Choo" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="you@school.ac.th" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>School / Institution</label>
+          <input type="text" placeholder="International Community School" required>
+        </div>
+        <div class="form-group">
+          <label>Year / Grade</label>
+          <select required>
+            <option value="" disabled selected>How did you hear about THIC</option>
+            <option>Social Media</option>
+            <option>School</option>
+            <option>Friends</option>
+            <option>Parents</option>
+            <option>Others</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Team Name (optional)</label>
+        <input type="text" placeholder="e.g. GoatedLlama">
+        </div>
+      <div class="form-group">
+        <label>How did you hear about THIC?</label>
+        <textarea placeholder="Through a teacher, social media, friend..."></textarea>
+      </div>
+      <button type="submit" class="form-submit"><span>Submit inquiry →</span></button>
+    </form>
+
+    <p class="contact-alt reveal">Urgent? Email us at <a href="mailto:thic@ics.ac.th">thic@ics.ac.th</a></p>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section id="faq">
+  <div class="faq-layout">
+    <div class="faq-intro">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title reveal" style="font-size:clamp(2rem,4vw,3rem);">Common Questions</h2>
+      <p class="reveal">Everything you need to know about THIC, the competition format, eligibility, and what to expect.</p>
+      <a href="#contact" class="faq-contact-link reveal">
+        Still have questions? Register →
+      </a>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Who is eligible to participate?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Any currently enrolled high school student (Grades 9–12 or equivalent)is eligible, regardless of nationality. Both Thai and international school students are welcome. Teams must consist of at least 2 thai nationals.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Is there a registration fee?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">300 baht</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do I need prior finance knowledge?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">No formal finance education is required. The competition is designed to challenge and stretch students. We provide a preparation resource pack after registration covering markets, valuation basics, and reading recommendations to help all teams get started on a level footing.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          What is the learning curve?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">THIC was designed as a developmental pipeline and will includes workshops meant to strengthen foundational skills</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How are finalists selected?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Teams are scored based on their Investment Thesis & Analytical Rigor, Live pitch and Q&A, and a Curveball event</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Will the competition be in Thai or English?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">All written materials and the final pitch are conducted in English. This reflects real-world finance practice and prepares students for international opportunities. Judges may ask Q&A questions in either language.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ─── sources ─── -->
+<section id="sources">
+  <div class="sources-grid">
+
+    <div class="sources-left">
+      <div class="section-eyebrow">Sources</div>
+      <p>All data, statistics, and references used across this website are listed below for transparency.</p>
+    </div>
+
+    <div class="sources-list">
+
+      <div class="source-item">
+        <div class="source-index">01</div>
+        <div class="source-content">
+          <div class="source-title">Source Title Here</div>
+          <div class="source-meta">Author / Organization · Year</div>
+          <a href="#" class="source-link">www.example.com</a>
+        </div>
+      </div>
+
+      <div class="source-item">
+        <div class="source-index">02</div>
+        <div class="source-content">
+          <div class="source-title">Source Title Here</div>
+          <div class="source-meta">Author / Organization · Year</div>
+          <a href="#" class="source-link">www.example.com</a>
+        </div>
+      </div>
+
+      <div class="source-item">
+        <div class="source-index">03</div>
+        <div class="source-content">
+          <div class="source-title">Source Title Here</div>
+          <div class="source-meta">Author / Organization · Year</div>
+          <a href="#" class="source-link">www.example.com</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-logo">THIC</div>
+  <div class="footer-copy">© 2025 THIC · Hosted by ICS Investment Club · Bangkok, Thailand</div>
+
+  <ul class="footer-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Register</a></li>
+    <li><a href="mailto:thic@ics.ac.th">Contact</a></li>
+  </ul>
+</footer>
+
+
+
+<script>
+ // ─── stats ───
+    function animateCountUp(el) {
+  const target = parseInt(el.dataset.target, 10);
+  const duration = 1800;
+  const start = performance.now();
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+  function step(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    el.textContent = Math.round(easeOut(progress) * target);
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+const statsEl = document.getElementById('heroStats');
+let statsAnimated = false;
+const statsObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting && !statsAnimated) {
+    statsAnimated = true;
+    document.querySelectorAll('.count-up').forEach((el, i) => {
+      setTimeout(() => animateCountUp(el), i * 120);
+    });
+  }
+}, { threshold: 0.3 });
+statsObserver.observe(statsEl);
+
+  // ─── NAV SCROLL EFFECT ───
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // ─── HAMBURGER ───
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('hamburger').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
+  }
+
+  // ─── SCROLL REVEAL ───
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        // stagger siblings
+        const siblings = [...entry.target.parentElement.querySelectorAll('.reveal:not(.visible)')];
+        const idx = siblings.indexOf(entry.target);
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, idx * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // ─── FAQ ACCORDION ───
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+
+    // close all
+    document.querySelectorAll('.faq-item').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-answer').style.maxHeight = '0';
+    });
+
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  }
+
+  // ─── FORM SUBMIT ───
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit span');
+    btn.textContent = 'Submitting…';
+    setTimeout(() => {
+      btn.textContent = '✓ Registration Received!';
+      e.target.style.opacity = '0.7';
+      e.target.style.pointerEvents = 'none';
+    }, 1200);
+  }
+</script>
+</body>
+</html>
