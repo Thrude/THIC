@@ -428,57 +428,98 @@ nav.scrolled {
   .btn-ghost:hover svg { transform: translateX(4px); }
 
   /* ─── PARTNERS ─── */
+  
   .partners {
-    margin-top: 7rem;
-    padding-top: 3rem;
-    border-top: 1px solid var(--line);
-    opacity: 0;
-    animation: fadeUp 0.9s 0.85s ease forwards;
-  }
+  margin-top: 5rem;
+  position: relative;
+}
 
-  .partners-label {
-    font-size: 0.68rem;
-    font-weight: 500;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--dark-gray);
-    margin-bottom: 2rem;
-  }
+.partners::before, .partners::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(197,160,89,0.4), transparent);
+}
+.partners::before { top: 0; }
+.partners::after { bottom: 0; }
 
-  .partners-row {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-  }
+.partners-label {
+  margin-top: 0.9rem;
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(197,160,89,0.6);
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.partners-label::before, .partners-label::after {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: rgba(197,160,89,0.25);
+}
 
-  .partner-logo {
-    width: 70px; height: 70px;
-    border-radius: 50%;
-    border: 1px solid var(--line);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--gold);
-    background: rgba(197,160,89,0.05);
-    transition: border-color 0.3s, background 0.3s;
-    cursor: default;
-    position: relative;
-    overflow: hidden;
-  }
-  .partner-logo::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at center, rgba(197,160,89,0.12), transparent 70%);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .partner-logo:hover { border-color: var(--gold); }
-  .partner-logo:hover::before { opacity: 1; }
+.partners-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.8rem 2.5rem;
+  border-right: 1px solid rgba(197,160,89,0.15);
+  transition:  0.3s;
+}
+
+.partner-logo1 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.8rem 2.5rem;
+  border-right: 1px solid rgba(197,160,89,0.15);
+  filter: brightness(0) saturate(100%) invert(68%) sepia(40%) saturate(500%) hue-rotate(5deg);
+  transition:  0.3s;
+}
+
+.partner-logo1:last-child { border-right: none; }
+.partner-logo1:hover { background: rgba(197,160,89,0.05); }
+
+.partner-logo1 img {
+  height: 36px;
+  width: auto;
+  object-fit:fill;
+  opacity: 1;
+  
+  transition: opacity 0.3s;
+}
+.partner-logo1:hover img { opacity: 1; }
+
+
+
+.partner-logo:last-child { border-right: none; }
+.partner-logo:hover { background: rgba(197,160,89,0.05); }
+
+.partner-logo img {
+  height: 36px;
+  width: auto;
+  object-fit:fill;
+  opacity: 1;
+  
+  transition: opacity 0.3s;
+}
+.partner-logo:hover img { opacity: 1; }
+
 
   /* ─── SECTION COMMON ─── */
   section { padding: 8rem 5vw; }
